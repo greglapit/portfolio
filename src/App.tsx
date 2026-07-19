@@ -1,122 +1,159 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css";
+import Button from "./components/Button";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="">Gregory Lapit</a>
+          </li>
+          <li>
+            <a href="mailto:greglapit@gmail.com">greglapit@gmail.com</a>
+          </li>
+          <li>
+            <Button
+              txt="Linkedin"
+              link="https://www.linkedin.com/in/gregory-lapit/"
+            ></Button>
+          </li>
+          <li>
+            <Button txt="Github" link="https://github.com/greglapit"></Button>
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <div className="flex-container">
+          <h1>My Portfolio</h1>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
+        <div className="flex-container">
+          <img
+            width="300px"
+            height="375px"
+            src="./images/portfolio_picture.jpg"
+            alt="portfolio_picture"
+          />
+          <div className="text-container">
+            <h2>Hi, I'm Greg.</h2>
+            <p>
+              I'm an engineer (software and mechanical) with an extensive
+              background in research. I studied Physics and CS at Harvard
+              university. Curious about my formal experiences? Check out below!
+            </p>
+            <Button txt="Resume" link="./images/resume.pdf"></Button>
+            <p>Otherwise, take a look at some of my larger projects!</p>
+          </div>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
+      </header>
+      <div className="project-grid">
+        <section id="first-project">
+          <div>
+            <div className="flex-container">
+              <h2>Solitude - Godot Software Development</h2>
+              <h2>2026</h2>
+            </div>
+            <div className="flex-container project-figures">
+              <img
+                width="533px"
+                height="300px"
+                src="./images/ace_idle.gif"
+                alt="solitude_game_gif"
+              />
+            </div>
+            <div className="text-container">
+              <p>
+                <i>Solitude</i> is a game I have been developing independently
+                from concept to implementation, combining software engineering
+                with gameplay design. The project centers on a card-based combat
+                system where each Diamond card becomes a unique weapon,
+                challenging me to design engaging combat mechanics while
+                building a modular architecture capable of supporting rapid
+                iteration and long-term scalability. Along the way, I have
+                implemented custom rendering effects with GLSL shaders,
+                engineered decoupled gameplay systems, and continuously refined
+                the player experience through iterative development and
+                playtesting.
+              </p>
+            </div>
+            <div className="flex-container">
+              <p>Read more about the project on Github!</p>
+              <a href="https://github.com/greglapit/solitude" target="_blank">
+                https://github.com/greglapit/solitude
               </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <div className="flex-container">
+              <h2>Modernizing Multithreaded Open-Source Software with HDF5</h2>
+              <h2>2025</h2>
+            </div>
+            <div className="flex-container project-figures">
+              <img
+                width="330px"
+                height="300px"
+                src="./images/100k_cube.png"
+                alt="100k element cube tesselation"
+              />
+              <img
+                width="300px"
+                height="300px"
+                src="./images/new_run_times_250k_1-128.png"
+                alt="runtime-graphs"
+              />
+            </div>
+            <div className="text-container">
+              <p>
+                Authored a CS paper at the University of Alabama on my
+                investigation of HDF5-based output systems for FEPX, an
+                open-source finite element package used to simulate the
+                deformation of polycrystalline materials on high-performance
+                computing clusters. By designing and executing 840 large-scale
+                simulations, I evaluated how modern parallel I/O techniques
+                affected runtime, scalability, storage efficiency, and
+                usability. The results demonstrated that HDF5 (dashed) retained
+                the speed advantages of fully parallel writes while reducing
+                storage requirements by roughly 50% and eliminating workflow
+                bottlenecks caused by traditional ASCII (dotted-dash) output
+                formats.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="flex-container">
+            <h2>
+              Engineering Precursor Delivery System for Molecular Beam Epitaxy
+            </h2>
+            <h2>2023</h2>
+          </div>
+          <div className="flex-container project-figures">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/YJ2XhwLB_mI?si=WKL5ylbvzFD-jJ31"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+          <div className="text-container">
+            <p>
+              As an undergraduate researcher at Harvard, I designed a precursor
+              inlet system for molecular beam epitaxy (MBE) to enable the
+              controlled delivery of a high-vapor-pressure metal-organic
+              precursor used in the growth of tungsten ditelluride (WTe₂). The
+              project combined vacuum system design, materials science, and
+              experimental engineering to overcome limitations of conventional
+              deposition methods, culminating in a presentation at the 2023
+              American Physical Society conference.
+            </p>
+          </div>
+        </section>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
