@@ -31,7 +31,7 @@ const App = () => {
           <img
             width="300px"
             height="375px"
-            src="./images/portfolio_picture.jpg"
+            src="portfolio_picture.jpg"
             alt="portfolio_picture"
           />
           <div className="text-container">
@@ -41,7 +41,7 @@ const App = () => {
               background in research. I studied Physics and CS at Harvard
               university. Curious about my formal experiences? Check out below!
             </p>
-            <Button txt="Resume" link="./images/resume.pdf"></Button>
+            <Button txt="Resume" link="./resume.pdf"></Button>
             <p>Otherwise, take a look at some of my larger projects!</p>
           </div>
         </div>
@@ -57,7 +57,7 @@ const App = () => {
               <img
                 width="533px"
                 height="300px"
-                src="./images/ace_idle.gif"
+                src="ace_idle.gif"
                 alt="solitude_game_gif"
               />
             </div>
@@ -94,13 +94,13 @@ const App = () => {
               <img
                 width="330px"
                 height="300px"
-                src="./images/100k_cube.png"
+                src="100k_cube.png"
                 alt="100k element cube tesselation"
               />
               <img
                 width="300px"
                 height="300px"
-                src="./images/new_run_times_250k_1-128.png"
+                src="new_run_times_250k_1-128.png"
                 alt="runtime-graphs"
               />
             </div>
