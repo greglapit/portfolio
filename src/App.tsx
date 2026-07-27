@@ -24,10 +24,10 @@ const App = () => {
         </ul>
       </nav>
       <header>
-        <div className="flex-container">
+        <div>
           <h1>My Portfolio</h1>
         </div>
-        <div className="flex-container">
+        <div className="header-content">
           <img
             width="300px"
             height="375px"
@@ -49,7 +49,7 @@ const App = () => {
       <div className="project-grid">
         <section id="first-project">
           <div>
-            <div className="flex-container">
+            <div className="flex-container project-title">
               <h2>Solitude - Godot Software Development</h2>
               <h2>2026</h2>
             </div>
@@ -76,7 +76,7 @@ const App = () => {
                 playtesting.
               </p>
             </div>
-            <div className="flex-container">
+            <div className="read-more">
               <p>Read more about the project on Github!</p>
               <a href="https://github.com/greglapit/solitude" target="_blank">
                 https://github.com/greglapit/solitude
@@ -86,8 +86,8 @@ const App = () => {
         </section>
         <section>
           <div>
-            <div className="flex-container">
-              <h2>Modernizing Multithreaded Open-Source Software with HDF5</h2>
+            <div className="flex-container project-title">
+              <h2>Multithreaded Output For Open-Source Software with HDF5</h2>
               <h2>2025</h2>
             </div>
             <div className="flex-container project-figures">
@@ -123,7 +123,7 @@ const App = () => {
           </div>
         </section>
         <section>
-          <div className="flex-container">
+          <div className="flex-container project-title">
             <h2>
               Engineering Precursor Delivery System for Molecular Beam Epitaxy
             </h2>
@@ -131,8 +131,8 @@ const App = () => {
           </div>
           <div className="flex-container project-figures">
             <iframe
-              width="560"
-              height="315"
+              width="560px"
+              height="315px"
               src="https://www.youtube.com/embed/YJ2XhwLB_mI?si=WKL5ylbvzFD-jJ31"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
