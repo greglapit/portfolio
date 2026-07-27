@@ -41,7 +41,7 @@ body {
     background-size: cover;
     background-position: center;
     background-color: var(--base-color);
-    padding: 1em
+    padding: 1em;
 }
 
 /* Nav Bar Desktop */
@@ -167,6 +167,8 @@ img {
 iframe {
     border-radius: .5em;
     max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
 }
 
 
